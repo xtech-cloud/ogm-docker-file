@@ -1,6 +1,6 @@
 # *************************************
 #
-# OMO MSA
+# OpenGM
 #
 # *************************************
 
@@ -13,7 +13,7 @@ ENV MSA_MODE release
 
 EXPOSE 9608
 
-ADD omo-msa-file /usr/local/bin/
-RUN chmod +x /usr/local/bin/omo-msa-file
+ADD ogma-file /usr/local/bin/
+RUN chmod +x /usr/local/bin/ogm-file
 
-CMD ["omo-msa-file"]
+CMD ["/usr/local/bin/ogm-file"]
